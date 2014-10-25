@@ -1,0 +1,28 @@
+{
+  "name": "cinematic",
+  "version": "0.1.0",
+  "description": "Video scroll with zero dependencies.",
+  "main": "dist/cinematic.min.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wildhoney/Cinematic.js.git"
+  },
+  "keywords": [
+    "cinematic",
+    "video",
+    "scroll",
+    "sequence"
+  ],
+  "author": "Adam Timberlake <adam.timberlake@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wildhoney/Cinematic.js/issues"
+  },
+  "homepage": "https://github.com/Wildhoney/Cinematic.js"
+}
