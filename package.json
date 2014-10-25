@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/Wildhoney/Cinematic.js/issues"
   },
-  "homepage": "https://github.com/Wildhoney/Cinematic.js"
+  "homepage": "https://github.com/Wildhoney/Cinematic.js",
+  "dependencies": {
+    "express": "^4.10.0"
+  }
 }
