@@ -8,7 +8,7 @@
      * @link
      * @constructor
      */
-    var app = $window.Cinematic = function Cinematic(videoElement) {
+    $window.Cinematic = function Cinematic(videoElement) {
 
         if (!(videoElement instanceof $window.HTMLVideoElement)) {
 
@@ -24,23 +24,27 @@
          * @type {Function}
          */
         videoElement.onloadedmetadata = function onLoadedMetaData() {
-            
+
+            /**
+             * @method renderFrame
+             * @return {void}
+             */
             var renderFrame = function renderFrame() {
 
-                var scrollOffset   = $window.scrollY + $window.innerHeight,
-                    documentHeight = this.computeDocumentHeight(),
-                    duration       = videoElement.duration;
+                setTimeout(function setTimeout() {
 
-                videoElement.currentTime = +((scrollOffset / documentHeight) * duration).toFixed(2);
+                    var scrollOffset   = $window.scrollY + $window.innerHeight,
+                        documentHeight = this.computeDocumentHeight(),
+                        duration       = videoElement.duration;
 
-            }.bind(this);
+                    videoElement.currentTime = +((scrollOffset / documentHeight) * duration).toFixed(2);
 
-            setInterval(function setInterval() {
+                    // Use the new request animation API to request the next frame.
+                    requestAnimationFrame(renderFrame.bind(this));
 
-                // Use the new request animation API to request the next frame.
-                requestAnimationFrame(renderFrame);
+                }.bind(this), 1000 / this.FRAMES_PER_SECOND);
 
-            }, 60);
+            }.bind(this)();
 
         }.bind(this);
     };
@@ -49,7 +53,16 @@
      * @property prototype
      * @type {Object}
      */
-    app.prototype = {
+    $window.Cinematic.prototype = {
+
+        /**
+         * Defines the desired frames per second. Be careful in defining a much higher FPS as some computers will
+         * not be able to handle enormously large frames per second.
+         *
+         * @constant FRAMES_PER_SECOND
+         * @type {Number}
+         */
+        FRAMES_PER_SECOND: 25,
 
         /**
          * @method throwException
