@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - '0.10'
+  - '0.11'
+
+script:
+  - npm install
+  - bower install
+  - gulp test
+  - gulp build
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: KsJ8LVRlBtZHx6gADLIFSe5Ujlevvwx7YKORTc40Vn8R4EiKYBc1vp7vWxKNi7nm9KQQlJ6TVQUwC0hzyhyxyDjIBugLd45pcf7sbYmAZvvEh5UjUySlajjo5daQ76DmRcDVTH7lpA7VYHITXJvgbFUJeEmj3Y/KuvMacRZvJmc=
+  app: cinematic-js
+  on:
+    repo: Wildhoney/Cinematic.js
