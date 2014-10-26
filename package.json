@@ -27,5 +27,12 @@
   "homepage": "https://github.com/Wildhoney/Cinematic.js",
   "dependencies": {
     "express": "^4.10.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.9",
+    "gulp-jshint": "^1.8.5",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.0.1",
+    "js-yaml": "^3.2.2"
   }
 }

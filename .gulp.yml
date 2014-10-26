@@ -1,0 +1,7 @@
+components: module/Cinematic.js
+
+build:
+  directory: dist
+  copy: example/js/vendor/cinematic
+  development: cinematic.js
+  production: cinematic.min.js
