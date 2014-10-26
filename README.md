@@ -39,6 +39,6 @@ The most important aspect of the library is the video itself &ndash; it must hav
 
 `ffmpeg -i input.mp4 -g 10 output.mp4`
 
-Try experimenting with the `-g` flag to achieve a compromise between file-size and the quality. Another flag that you can experiment with is the `-crf` flag which relates to the video's *constant rate factor* &ndash; this ranges from 1 to 51. You can try changing the value to achieve a satisfying compromise:
+Try experimenting with the `-g` flag to achieve a compromise between file-size and the quality. Another flag that you can experiment with is the `-crf` flag which relates to the video's *constant rate factor* &ndash; [this ranges from 0 to 51](http://superuser.com/questions/677576/what-is-crf-used-for-in-ffmpeg/677580#677580). You can try changing the value to achieve a satisfying compromise:
 
 `ffmpeg -i input/mp4 -g 10 -crf 40 output.mp4`
