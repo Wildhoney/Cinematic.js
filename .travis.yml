@@ -12,6 +12,8 @@ script:
 
 deploy:
   provider: heroku
+  all_branches: true
+  skip_cleanup: true
   api_key:
     secure: KsJ8LVRlBtZHx6gADLIFSe5Ujlevvwx7YKORTc40Vn8R4EiKYBc1vp7vWxKNi7nm9KQQlJ6TVQUwC0hzyhyxyDjIBugLd45pcf7sbYmAZvvEh5UjUySlajjo5daQ76DmRcDVTH7lpA7VYHITXJvgbFUJeEmj3Y/KuvMacRZvJmc=
   app: cinematic-js
