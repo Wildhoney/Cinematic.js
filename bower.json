@@ -1,11 +1,11 @@
 {
   "name": "cinematic",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/Wildhoney/Cinematic.js",
   "authors": [
     "Adam Timberlake <adam.timberlake@gmail.com>"
   ],
-  "description": "Video scroll with zero dependencies.",
+  "description": "Experimental module for video sequence scrolling with zero dependencies.",
   "main": "dist/cinematic.min.js",
   "keywords": [
     "cinematic",

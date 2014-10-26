@@ -1,7 +1,7 @@
 {
   "name": "cinematic",
-  "version": "0.1.1",
-  "description": "Video scroll with zero dependencies.",
+  "version": "0.1.2",
+  "description": "Experimental module for video sequence scrolling with zero dependencies.",
   "main": "dist/cinematic.min.js",
   "directories": {
     "example": "example"
