@@ -27,7 +27,7 @@ Simply define your `video` element by adding it to the DOM as usual, and then ad
 
 Cinematic.js will then pick up the video and determine how to seek in the video based on the ratio to the `scrollTop` property and the document's height.
 
-**Note:** It's entirely up to you to render the video &ndash; see <a href="#using-ffmpeg>using `ffmpeg`</a>; any stalling in the seeking of the video is &mdash; most likely &mdash; a video encoding problem, and not a problem of the Cinematic.js module.
+**Note:** It's entirely up to you to render the video &ndash; see <a href="#using-ffmpeg">using `ffmpeg`</a>; any stalling in the seeking of the video is &mdash; most likely &mdash; a video encoding problem, and not a problem of the Cinematic.js module.
 
 In the example, Cinematic.js comes with `LeicesterSquareHigh.mp4` and `LeicesterSquareLow.mp4` where the difference between the two in terms of file-size is significant, whereas the quality isn't *too* noticeable.
 
