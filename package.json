@@ -1,6 +1,6 @@
 {
   "name": "cinematic",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Video scroll with zero dependencies.",
   "main": "dist/cinematic.min.js",
   "directories": {
