@@ -27,7 +27,7 @@
             
             var renderFrame = function renderFrame() {
 
-                var scrollOffset   = window.scrollY + window.innerHeight,
+                var scrollOffset   = $window.scrollY + $window.innerHeight,
                     documentHeight = this.computeDocumentHeight(),
                     duration       = videoElement.duration;
 
